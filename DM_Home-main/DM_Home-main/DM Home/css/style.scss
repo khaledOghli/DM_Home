@@ -1,0 +1,195 @@
+@import'variables'; 
+@import'font';
+@import'components';
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: $white-color;
+    font-family: $font-ar;
+    overflow-x: hidden;
+}
+
+body.rtl nav {
+    direction: rtl;
+}
+
+header {
+    overflow-x:hidden;
+    overflow-y:hidden;
+    &:before {
+        content: "";
+        background: url(/images/s-l.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -40px;
+        left: -40%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+
+    &:after {
+        content: "";
+        background: url(/images/s-r.png);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -40px;
+        right: -35%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        overflow-x:hidden;
+        overflow-y:hidden;
+    }
+
+.nav-header {
+    height: $header-height;
+    z-index: 9;
+    background-color: #fff;
+    position: relative;
+    & img {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+    }
+}
+
+.navbar {
+    z-index: 2;
+    height: $nav-height;
+    background-color: $nav-color !important;
+
+    & .navbar-nav .nav-link {
+        color: $white-color !important;
+        font-size: 0.8rem;
+    }
+    & .navbar-brand {
+        color: $secondary-color !important;
+    }
+}
+
+.hero-section{
+    // background-image: url(/images/header-img.jpg);
+    width: 100%;
+    height: 100%;
+    max-height: 85vh;
+    -webkit-mask: url(/images/header-mask-img.svg) center center / cover;
+    mask: url(/images/header-mask-img.svg) center center / cover;
+    -webkit-mask-repeat: no-repeat;
+    background-position: 51% 60%;
+    position: relative;
+    top: -60px;
+    z-index: 1;
+
+    .hero-overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 4;
+        width: 53%;
+        height: 63%;
+
+        .hero-img {
+            background: url(/images/shape-overlay.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: right;
+        }
+        .hero-text {
+            position: relative;
+            right: 50px;
+            top:15px;
+            transform: scale(0.98);
+        & span:nth-of-type(1) {
+            font-size: 0.8rem;
+            color: $secondary-color;
+        }
+        & span:nth-of-type(2) {
+            font-size: 2rem;
+            color: $white-color;
+        }
+        & span:nth-of-type(3) {
+            font-size: 1rem;
+            color: $white-color;
+        }
+        & span:nth-of-type(4) {
+            font-size: 0.6rem;
+            color: $white-color;
+        }
+        }
+
+    }
+
+.carousel {
+    height: 100%;
+    max-height: 85vh;
+
+.carousel-inner {
+    height: 100%;
+    max-height: 85vh;
+
+    .carousel-item {
+        background: url(/images/header-img-ar.jpg);
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        background-position: center bottom;
+    }
+& img {
+    max-height: 100%;
+
+}
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: flex-end;
+    max-height: 85vh;
+
+    & li {
+        position: relative;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+        margin-left: 3px;
+        text-indent: -999px;
+        border-radius: 50%;
+        cursor: pointer;
+        right: 20%;
+    }
+
+    & li.active {
+        background-color: $secondary-color !important;
+        width: 27px;
+        border-radius: 33%;
+        box-shadow:
+        0 0 10px  #eeb947,
+        inset 0 0 10px #eeb947, /* middle magenta */
+        0 0 20px  #f89b38; /* outer cyan */
+    }
+}
+
+}
+
+}
+
+
+}

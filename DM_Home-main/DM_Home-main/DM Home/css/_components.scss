@@ -1,0 +1,78 @@
+.container-lg{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+
+}
+
+.align-content-center {
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+button {
+    cursor: pointer;
+    min-width: 64px;
+    padding: 5px 16px;
+    border: none;
+    border-radius: 12px;
+    margin: 16px;
+    outline: 0;
+    font-size: 0.6rem;
+  }
+
+  button.raised {
+    background: $secondary-color;
+    color: #FFF;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),
+      0 2px 2px 0 rgba(0,0,0,0.14),
+      0 1px 5px 0 rgba(0,0,0,0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),
+      0 4px 5px 0 rgba(0,0,0,0.14),
+      0 1px 10px 0 rgba(0,0,0,0.12);
+    }
+    &:focus {
+      opacity: 0.7;
+    }
+    &:active {
+      opacity: 1;
+      box-shadow: 0 5px 5px -3px rgba(0,0,0,0.2),
+      0 8px 10px 1px rgba(0,0,0,0.14),
+      0 3px 14px 2px rgba(0,0,0,0.12);
+    }
+  }
+
+
+  [ripple] {
+    position: relative;
+    overflow: hidden;
+  }
+  [ripple] .ripple--container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  [ripple] .ripple--container span {
+    transform: scale(0);
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.75;
+    background-color: #fff;
+    animation: ripple 1000ms;
+  }
+  @keyframes ripple {
+    to {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
