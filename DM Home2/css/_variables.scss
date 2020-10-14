@@ -1,0 +1,33 @@
+@font-face {
+    src: url('/fonts/DroidKufi-Bold.ttf');
+    font-family: 'DroidKufi-bold';
+    font-weight: bold;
+}
+@font-face {
+    src: url('/fonts/DroidKufi-Regular.ttf');
+    font-family: 'DroidKufi';
+    font-weight: normal;
+}
+
+/* Colors Variables */
+$white-color: #fcfcfc;
+$dark-color:#535353;
+$primary-color:#a50a2e;
+$secondary-color:#ee9c47;
+$additional-color:blue;
+$gray-font:#797979;
+$nav-color: rgba($primary-color, 0.78);
+
+/* Fonts Variables */
+$font-ar:'DroidKufi',Roboto,Arial;
+$font-ar-bold:'DroidKufi-bold',Roboto,Arial;
+
+/* Calc */
+
+$window-height: 100vh;
+$nav-height: 60px;
+$header-height: 75px;
+
+/* sections padding and margin */ 
+$sections_padding: 50px 0 ;
+$sections_margin: 75px 0 ;

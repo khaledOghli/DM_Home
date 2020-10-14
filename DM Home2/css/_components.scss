@@ -1,0 +1,104 @@
+.container-lg{
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    padding: 5px 10px;
+    margin: 0 auto;
+
+}
+
+.nav-p-0 {
+  padding: 0.5rem 0;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+.align-item-center {
+  align-items: center;
+}
+.align-content-center {
+    height: 100%;
+    align-content: center;
+    align-items: center;
+}
+
+
+  button.raised {
+    background: $secondary-color;
+    color: #FFF;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2),
+      0 2px 2px 0 rgba(0,0,0,0.14),
+      0 1px 5px 0 rgba(0,0,0,0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.2),
+      0 4px 5px 0 rgba(0,0,0,0.14),
+      0 1px 10px 0 rgba(0,0,0,0.12);
+    }
+    &:focus {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+      box-shadow: 0 5px 5px -3px rgba(0,0,0,0.2),
+      0 8px 10px 1px rgba(0,0,0,0.14),
+      0 3px 14px 2px rgba(0,0,0,0.12);
+    }
+  }
+
+  button.raised.outline {
+    background: transparent;
+    color: orange;
+    border: 2px solid $secondary-color;
+  }
+
+  
+[ripple] {
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+
+[ripple] .ripple {
+  position: absolute;
+  background: #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  -webkit-animation: ink 1.6s;
+  animation: ink 1.6s;
+}
+
+[ripple].outline .ripple {
+  background: $secondary-color;
+}
+@keyframes ink {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(40);
+    transform: scale(40);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: scale(40);
+    transform: scale(40);
+    opacity: 0;
+  }
+}
+
+

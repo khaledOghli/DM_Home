@@ -1,0 +1,145 @@
+@import'variables';
+@import'font';
+@import'components';
+
+::-webkit-scrollbar {
+    width: .4em
+}
+
+::-webkit-scrollbar-track {
+    background: $white-color
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+    border-radius: 7px;
+    height: 16px;
+}
+
+@-ms-viewport {
+    width: device-with;
+    scale: 1
+}
+
+@-o-viewport {
+    width: device-with;
+    scale: 1
+}
+
+
+@viewport {
+    width: device-with;
+    scale: 1
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeSpeed
+}
+
+html {
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::selection {
+    color: $secondary-color;
+    background: $primary-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white-color;
+    font-family: $font-ar;
+    // overflow-x: hidden;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+*:focus {
+    outline: none;
+}
+
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px dashed lighten($primary-color, 20%);
+    transition: all .5s ease-in-out;
+    transform: scale(1.025);
+}
+
+section {
+    padding: $sections_padding;
+    margin: $sections_margin;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    max-width: 100%;
+  }
+
+  button {
+    cursor: pointer;
+    min-width: 64px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 16px;
+    outline: 0;
+    font-size: 0.6rem;
+  }
+
+
+
+
+ h1 {
+    font-size: 2.5rem;
+}
+ h2 {
+    font-size: 2rem;
+    line-height: calc(1ex / 0.6);
+
+}
+ h3 {
+    font-size: 1.75rem;
+}
+ h4 {
+    font-size: 1.5rem;
+}
+
+ p {
+    font-size: 1rem;
+    line-height: calc(1ex / 0.45);
+
+}
